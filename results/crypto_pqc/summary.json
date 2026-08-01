@@ -1,0 +1,127 @@
+{
+  "universe": "pqc",
+  "assets": [
+    "QRL-USD",
+    "ALGO-USD",
+    "CELL-USD",
+    "ABEL-USD",
+    "XX-USD",
+    "IOTA-USD",
+    "QNT-USD"
+  ],
+  "data_source": "yahoo",
+  "date_range": [
+    "2025-01-01",
+    "2026-07-30"
+  ],
+  "theta": 0.1,
+  "gamma": 243.46706399224652,
+  "annualised_vol_pct": {
+    "QRL-USD": 133.79,
+    "ALGO-USD": 86.88,
+    "CELL-USD": 123.4,
+    "ABEL-USD": 19.18,
+    "XX-USD": 141.34,
+    "IOTA-USD": 84.98,
+    "QNT-USD": 76.0
+  },
+  "qpu_instance": {
+    "n_qubits": 56,
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 243.46706399224652,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 2.0
+    }
+  },
+  "local_instance": {
+    "assets": [
+      "QRL-USD",
+      "ALGO-USD",
+      "ABEL-USD",
+      "IOTA-USD"
+    ],
+    "n_qubits": 16
+  },
+  "approximation_ratio": 0.9946365447487762,
+  "results": {
+    "Random": {
+      "objective_cost": 0.2658506193570438,
+      "return": -0.15124000636661172,
+      "risk": 0.0008517891128631612,
+      "sharpe_ratio": -5.182038610915695,
+      "transaction_cost": 0.013999999999999999,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Random"
+    },
+    "Simulated annealing": {
+      "objective_cost": 0.2578263014561659,
+      "return": -0.06663832600687508,
+      "risk": 0.0007891738724348548,
+      "sharpe_ratio": -2.372125868440742,
+      "transaction_cost": 0.016,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Simulated annealing"
+    },
+    "Exact (brute force)": {
+      "objective_cost": 0.2578263014561659,
+      "return": -0.06663832600687508,
+      "risk": 0.0007891738724348548,
+      "sharpe_ratio": -2.372125868440742,
+      "transaction_cost": 0.016,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Exact (brute force)"
+    },
+    "VQE-DE (optimized_real_amplitudes)": {
+      "objective_cost": 0.2672406066609776,
+      "return": -0.15426641846150524,
+      "risk": 0.0008245466639686488,
+      "sharpe_ratio": -5.372343553128252,
+      "transaction_cost": 0.013999999999999999,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "VQE-DE (optimized_real_amplitudes)"
+    }
+  },
+  "quantum_exposure": {
+    "blind": 0.2722222222222222,
+    "aware": 0.19999999999999998
+  },
+  "best_strategy": {
+    "time_step_0": {
+      "QRL-USD": 0.0,
+      "ALGO-USD": 0.4,
+      "ABEL-USD": 0.6,
+      "IOTA-USD": 0.0
+    },
+    "time_step_1": {
+      "QRL-USD": 0.2,
+      "ALGO-USD": 0.2,
+      "ABEL-USD": 0.6,
+      "IOTA-USD": 0.0
+    }
+  },
+  "theta_sweep": []
+}

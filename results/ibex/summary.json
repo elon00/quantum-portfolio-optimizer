@@ -1,0 +1,180 @@
+{
+  "portfolio": "ibex",
+  "assets": [
+    "BTC-USD",
+    "ETH-USD",
+    "SOL-USD",
+    "QRL-USD",
+    "ALGO-USD"
+  ],
+  "data_source": "cache",
+  "date_range": [
+    "2022-11-01",
+    "2023-04-01"
+  ],
+  "qpu_instance": {
+    "na": 5,
+    "nt": 4,
+    "nq": 2,
+    "n_qubits": 40,
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 1000.0,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 1.0
+    }
+  },
+  "local_instance": {
+    "na": 3,
+    "nt": 2,
+    "nq": 2,
+    "n_qubits": 12
+  },
+  "results": {
+    "Random": {
+      "objective_cost": 0.7531879833852533,
+      "return": -0.10326075518547692,
+      "risk": 0.0004897750880003943,
+      "sharpe_ratio": -4.665916378739347,
+      "transaction_cost": 0.008,
+      "rest_breach_pct": 60.0,
+      "budget_per_step": [
+        0.4,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Random"
+    },
+    "Simulated annealing": {
+      "objective_cost": 0.7531879833852533,
+      "return": -0.10326075518547692,
+      "risk": 0.0004897750880003943,
+      "sharpe_ratio": -4.665916378739347,
+      "transaction_cost": 0.008,
+      "rest_breach_pct": 60.0,
+      "budget_per_step": [
+        0.4,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Simulated annealing"
+    },
+    "Exact (brute force)": {
+      "objective_cost": 0.7531879833852533,
+      "return": -0.10326075518547692,
+      "risk": 0.0004897750880003943,
+      "sharpe_ratio": -4.665916378739347,
+      "transaction_cost": 0.008,
+      "rest_breach_pct": 60.0,
+      "budget_per_step": [
+        0.4,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Exact (brute force)"
+    },
+    "VQE-DE (optimized_real_amplitudes)": {
+      "objective_cost": 0.7531879833852533,
+      "return": -0.10326075518547692,
+      "risk": 0.0004897750880003943,
+      "sharpe_ratio": -4.665916378739347,
+      "transaction_cost": 0.008,
+      "rest_breach_pct": 60.0,
+      "budget_per_step": [
+        0.4,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "VQE-DE (optimized_real_amplitudes)"
+    }
+  },
+  "approximation_ratio": 1.0,
+  "vqe_info": {
+    "n_qubits": 12,
+    "n_params": 60,
+    "population_size": 24,
+    "num_generations": 20,
+    "reps": 2,
+    "final_expectation": 2.392644798480231,
+    "n_unique_sampled": 2687,
+    "circuit_evaluations": 504
+  },
+  "vqe_seconds": 7.428761959075928,
+  "best_strategy": {
+    "time_step_0": {
+      "BTC-USD": 0.4,
+      "ETH-USD": 0.0,
+      "SOL-USD": 0.0
+    },
+    "time_step_1": {
+      "BTC-USD": 0.6,
+      "ETH-USD": 0.2,
+      "SOL-USD": 0.0
+    }
+  },
+  "scaling": [
+    {
+      "na": 2,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 8,
+      "exact": 0.7531879833852535,
+      "vqe": 0.7531879833852535,
+      "random_mean": 1.4254917546975294,
+      "approx_ratio": 1.0,
+      "optimal_found": true,
+      "vqe_seconds": 2.4729466438293457
+    },
+    {
+      "na": 3,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 12,
+      "exact": 0.7531879833852535,
+      "vqe": 0.7531879833852535,
+      "random_mean": 4.106905611522262,
+      "approx_ratio": 1.0,
+      "optimal_found": true,
+      "vqe_seconds": 5.698978424072266
+    },
+    {
+      "na": 2,
+      "nt": 4,
+      "nq": 2,
+      "n_qubits": 16,
+      "exact": 0.9347480748541002,
+      "vqe": 0.9426024862376057,
+      "random_mean": 2.023099090233492,
+      "approx_ratio": 0.9927832002060774,
+      "optimal_found": false,
+      "vqe_seconds": 132.07234072685242
+    },
+    {
+      "na": 4,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 16,
+      "exact": 0.7531879833852535,
+      "vqe": 0.8061400486972428,
+      "random_mean": 5.865345606756641,
+      "approx_ratio": 0.9896419341473536,
+      "optimal_found": false,
+      "vqe_seconds": 210.79132318496704
+    },
+    {
+      "na": 3,
+      "nt": 3,
+      "nq": 2,
+      "n_qubits": 18,
+      "exact": 0.7245965342022669,
+      "vqe": 0.873688117157819,
+      "random_mean": 4.747313842889685,
+      "approx_ratio": 0.9629375937917447,
+      "optimal_found": false,
+      "vqe_seconds": 1245.093976020813
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+ticker,name,tier,signature,vulnerability,note
+QRL-USD,Quantum Resistant Ledger,pqc,"XMSS (hash-based, IETF RFC 8391)",0.05,"PQ from genesis; stateful hash-based signatures, no ECDSA anywhere."
+ALGO-USD,Algorand,partial,Ed25519 + Falcon-1024 state proofs,0.35,Falcon State Proofs since 2022 secure chain history; first Falcon mainnet transaction Nov 2025; consensus VRF still classical.
+CELL-USD,Cellframe,pqc,Dilithium / Falcon / SPHINCS+,0.15,Service-oriented L1 with selectable NIST PQC signature schemes.
+ABEL-USD,Abelian,pqc,Lattice-based (Dilithium-family),0.15,Privacy L1 designed around lattice cryptography.
+XX-USD,xx network,pqc,Hash-based (WOTS+),0.2,PQ signatures plus metadata-shredding mixnet.
+IOTA-USD,IOTA,partial,Ed25519 (formerly Winternitz OTS),0.6,Used hash-based W-OTS pre-Chrysalis; current protocol is Ed25519.
+QNT-USD,Quant,partial,Overledger interoperability layer,0.55,Publishes PQC interoperability research; security inherits from the chains it connects.

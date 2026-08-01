@@ -1,0 +1,8 @@
+ticker,name,tier,signature,vulnerability,note
+BTC-USD,Bitcoin,classical,ECDSA / Schnorr (secp256k1),0.95,Exposed reused/taproot public keys are Shor-vulnerable; migration requires consensus-level change.
+ETH-USD,Ethereum,classical,ECDSA (secp256k1),0.9,Account abstraction and leanXMSS research underway; nothing shipped.
+SOL-USD,Solana,classical,Ed25519,0.9,Classical EdDSA.
+XRP-USD,XRP,classical,ECDSA / Ed25519,0.9,Classical.
+BNB-USD,BNB,classical,ECDSA (secp256k1),0.9,Classical.
+ADA-USD,Cardano,classical,Ed25519,0.88,PQ research published; not deployed.
+LINK-USD,Chainlink,classical,ECDSA,0.9,Classical.

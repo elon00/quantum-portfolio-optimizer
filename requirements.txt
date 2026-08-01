@@ -1,0 +1,12 @@
+# Core
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+scipy>=1.11
+
+# Market data
+yfinance>=0.2.40
+
+# Quantum
+qiskit>=1.2
+qiskit-ibm-catalog>=0.2      # Qiskit Functions client (QPU submission only)

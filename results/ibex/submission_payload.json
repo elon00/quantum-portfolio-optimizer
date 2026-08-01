@@ -1,0 +1,54 @@
+{
+  "preview": {
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 1000.0,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 1.0
+    },
+    "optimizer_settings": {
+      "de_optimizer_settings": {
+        "num_generations": 20,
+        "population_size": 40,
+        "recombination": 0.4,
+        "max_parallel_jobs": 5,
+        "max_batchsize": 4,
+        "mutation_range": [
+          0.0,
+          0.25
+        ]
+      },
+      "optimizer": "differential_evolution",
+      "primitive_settings": {
+        "estimator_shots": 25000,
+        "estimator_precision": null,
+        "sampler_shots": 100000
+      }
+    },
+    "ansatz_settings": {
+      "ansatz": "optimized_real_amplitudes",
+      "multiple_passmanager": false,
+      "dd_enable": false
+    },
+    "backend_name": "ibm_torino",
+    "previous_session_id": [],
+    "apply_postprocess": true,
+    "tags": [
+      "dpo",
+      "ibex",
+      "56q"
+    ],
+    "assets": "<7 tickers x 152 dates>"
+  },
+  "preflight": {
+    "n_qubits": 56,
+    "total_circuits": 840,
+    "estimator_load": 100000,
+    "warnings": [],
+    "errors": [],
+    "ok": true
+  }
+}

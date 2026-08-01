@@ -1,0 +1,182 @@
+{
+  "portfolio": "nifty",
+  "assets": [
+    "RELIANCE.NS",
+    "TCS.NS",
+    "HDFCBANK.NS",
+    "INFY.NS",
+    "ITC.NS",
+    "LT.NS",
+    "SUNPHARMA.NS"
+  ],
+  "data_source": "cache",
+  "date_range": [
+    "2024-01-01",
+    "2024-12-31"
+  ],
+  "qpu_instance": {
+    "na": 7,
+    "nt": 4,
+    "nq": 2,
+    "n_qubits": 56,
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 1000.0,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 1.0
+    }
+  },
+  "local_instance": {
+    "na": 3,
+    "nt": 2,
+    "nq": 2,
+    "n_qubits": 12
+  },
+  "results": {
+    "Random": {
+      "objective_cost": 0.0006987293257139093,
+      "return": 0.116409490518817,
+      "risk": 0.0002123778081575501,
+      "sharpe_ratio": 7.987922107922084,
+      "transaction_cost": 0.01,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Random"
+    },
+    "Simulated annealing": {
+      "objective_cost": 0.0006987293257139093,
+      "return": 0.116409490518817,
+      "risk": 0.0002123778081575501,
+      "sharpe_ratio": 7.987922107922084,
+      "transaction_cost": 0.01,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Simulated annealing"
+    },
+    "Exact (brute force)": {
+      "objective_cost": 0.0006987293257139093,
+      "return": 0.116409490518817,
+      "risk": 0.0002123778081575501,
+      "sharpe_ratio": 7.987922107922084,
+      "transaction_cost": 0.01,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Exact (brute force)"
+    },
+    "VQE-DE (optimized_real_amplitudes)": {
+      "objective_cost": 0.0059530848020035165,
+      "return": 0.10303500457347085,
+      "risk": 0.0001927777577530512,
+      "sharpe_ratio": 7.420895781309594,
+      "transaction_cost": 0.013999999999999999,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "VQE-DE (optimized_real_amplitudes)"
+    }
+  },
+  "approximation_ratio": 0.987300548507157,
+  "vqe_info": {
+    "n_qubits": 12,
+    "n_params": 60,
+    "population_size": 24,
+    "num_generations": 20,
+    "reps": 2,
+    "final_expectation": 0.26661035214800555,
+    "n_unique_sampled": 1796,
+    "circuit_evaluations": 504
+  },
+  "vqe_seconds": 9.357544422149658,
+  "best_strategy": {
+    "time_step_0": {
+      "RELIANCE.NS": 0.6,
+      "TCS.NS": 0.4,
+      "HDFCBANK.NS": 0.0
+    },
+    "time_step_1": {
+      "RELIANCE.NS": 0.4,
+      "TCS.NS": 0.4,
+      "HDFCBANK.NS": 0.2
+    }
+  },
+  "scaling": [
+    {
+      "na": 2,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 8,
+      "exact": 0.0006987293257134652,
+      "vqe": 0.0006987293257134652,
+      "random_mean": 0.5105527265107713,
+      "approx_ratio": 1.0,
+      "optimal_found": true,
+      "vqe_seconds": 2.5009942054748535
+    },
+    {
+      "na": 3,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 12,
+      "exact": 0.0006987293257134652,
+      "vqe": 0.0059530848020032945,
+      "random_mean": 0.4157507670646155,
+      "approx_ratio": 0.9873404898698626,
+      "optimal_found": false,
+      "vqe_seconds": 6.066206693649292
+    },
+    {
+      "na": 2,
+      "nt": 4,
+      "nq": 2,
+      "n_qubits": 16,
+      "exact": 0.08493567266763868,
+      "vqe": 0.08493567266763868,
+      "random_mean": 1.093288703326612,
+      "approx_ratio": 1.0,
+      "optimal_found": true,
+      "vqe_seconds": 149.4674756526947
+    },
+    {
+      "na": 4,
+      "nt": 2,
+      "nq": 2,
+      "n_qubits": 16,
+      "exact": -0.010094887760199178,
+      "vqe": -0.008883370427714254,
+      "random_mean": 0.6202898027259139,
+      "approx_ratio": 0.9980781301469256,
+      "optimal_found": false,
+      "vqe_seconds": 219.2839035987854
+    },
+    {
+      "na": 3,
+      "nt": 3,
+      "nq": 2,
+      "n_qubits": 18,
+      "exact": 0.02778758741883358,
+      "vqe": 0.02778758741883358,
+      "random_mean": 0.6179497168058297,
+      "approx_ratio": 1.0,
+      "optimal_found": true,
+      "vqe_seconds": 1263.5593497753143
+    }
+  ]
+}

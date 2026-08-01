@@ -1,0 +1,184 @@
+{
+  "universe": "mixed",
+  "assets": [
+    "BTC-USD",
+    "ETH-USD",
+    "SOL-USD",
+    "ALGO-USD",
+    "HBAR-USD",
+    "QRL-USD",
+    "CELL-USD"
+  ],
+  "data_source": "cache",
+  "date_range": [
+    "2025-01-01",
+    "2026-07-30"
+  ],
+  "theta": 0.1,
+  "gamma": 166.8788286794196,
+  "annualised_vol_pct": {
+    "BTC-USD": 43.98,
+    "ETH-USD": 70.87,
+    "SOL-USD": 78.8,
+    "ALGO-USD": 86.88,
+    "HBAR-USD": 81.37,
+    "QRL-USD": 133.79,
+    "CELL-USD": 123.4
+  },
+  "qpu_instance": {
+    "n_qubits": 56,
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 166.8788286794196,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 2.0
+    }
+  },
+  "local_instance": {
+    "assets": [
+      "BTC-USD",
+      "ETH-USD",
+      "ALGO-USD",
+      "QRL-USD"
+    ],
+    "n_qubits": 16
+  },
+  "approximation_ratio": 1.0,
+  "results": {
+    "Random": {
+      "objective_cost": 0.4137063687674454,
+      "return": -0.26857331923472705,
+      "risk": 0.0016085172077135407,
+      "sharpe_ratio": -6.696532962248035,
+      "transaction_cost": 0.013999999999999999,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Random"
+    },
+    "Simulated annealing": {
+      "objective_cost": 0.40245247453557687,
+      "return": -0.22423158432449075,
+      "risk": 0.0009959542294246295,
+      "sharpe_ratio": -7.10521289574603,
+      "transaction_cost": 0.016,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Simulated annealing"
+    },
+    "Exact (brute force)": {
+      "objective_cost": 0.40245247453557687,
+      "return": -0.22423158432449075,
+      "risk": 0.0009959542294246295,
+      "sharpe_ratio": -7.10521289574603,
+      "transaction_cost": 0.016,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Exact (brute force)"
+    },
+    "VQE-DE (optimized_real_amplitudes)": {
+      "objective_cost": 0.40245247453557687,
+      "return": -0.22423158432449075,
+      "risk": 0.0009959542294246295,
+      "sharpe_ratio": -7.10521289574603,
+      "transaction_cost": 0.016,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "VQE-DE (optimized_real_amplitudes)"
+    }
+  },
+  "quantum_exposure": {
+    "blind": 0.845,
+    "aware": 0.8388888888888888
+  },
+  "best_strategy": {
+    "time_step_0": {
+      "BTC-USD": 0.6,
+      "ETH-USD": 0.4,
+      "ALGO-USD": 0.0,
+      "QRL-USD": 0.0
+    },
+    "time_step_1": {
+      "BTC-USD": 0.6,
+      "ETH-USD": 0.0,
+      "ALGO-USD": 0.0,
+      "QRL-USD": 0.2
+    }
+  },
+  "theta_sweep": [
+    {
+      "theta": 0.0,
+      "quantum_exposure": 0.845,
+      "return": -0.12708336798307063,
+      "sharpe": -3.5545680788426175,
+      "risk": 0.001278214556824159
+    },
+    {
+      "theta": 0.05,
+      "quantum_exposure": 0.8388888888888888,
+      "return": -0.07323158432449085,
+      "sharpe": -2.320484863387084,
+      "risk": 0.0009959542294246293
+    },
+    {
+      "theta": 0.1,
+      "quantum_exposure": 0.8388888888888888,
+      "return": -0.07323158432449085,
+      "sharpe": -2.320484863387084,
+      "risk": 0.0009959542294246293
+    },
+    {
+      "theta": 0.2,
+      "quantum_exposure": 0.7777777777777777,
+      "return": -0.06850558727537098,
+      "sharpe": -1.9560057586721908,
+      "risk": 0.0012266247670089853
+    },
+    {
+      "theta": 0.3,
+      "quantum_exposure": 0.7624999999999998,
+      "return": -0.06518374725597083,
+      "sharpe": -2.16050261165408,
+      "risk": 0.0009102675386966991
+    },
+    {
+      "theta": 0.5,
+      "quantum_exposure": 0.42499999999999993,
+      "return": -0.20184837432341285,
+      "sharpe": -4.630114180704389,
+      "risk": 0.0019004966563165857
+    },
+    {
+      "theta": 0.8,
+      "quantum_exposure": 0.19999999999999998,
+      "return": -0.316063028379216,
+      "sharpe": -5.652610490920248,
+      "risk": 0.003126434061846173
+    },
+    {
+      "theta": 1.2,
+      "quantum_exposure": 0.16249999999999995,
+      "return": -0.3881818652439919,
+      "sharpe": -6.99654684454201,
+      "risk": 0.0030782436520941413
+    }
+  ]
+}

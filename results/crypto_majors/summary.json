@@ -1,0 +1,127 @@
+{
+  "universe": "majors",
+  "assets": [
+    "BTC-USD",
+    "ETH-USD",
+    "SOL-USD",
+    "XRP-USD",
+    "BNB-USD",
+    "ADA-USD",
+    "LINK-USD"
+  ],
+  "data_source": "yahoo",
+  "date_range": [
+    "2025-01-01",
+    "2026-07-30"
+  ],
+  "theta": 0.1,
+  "gamma": 142.74675851926045,
+  "annualised_vol_pct": {
+    "BTC-USD": 43.98,
+    "ETH-USD": 70.87,
+    "SOL-USD": 78.8,
+    "XRP-USD": 75.29,
+    "BNB-USD": 50.07,
+    "ADA-USD": 93.31,
+    "LINK-USD": 81.59
+  },
+  "qpu_instance": {
+    "n_qubits": 56,
+    "qubo_settings": {
+      "nt": 4,
+      "nq": 2,
+      "dt": 30,
+      "max_investment": 5.0,
+      "risk_aversion": 142.74675851926045,
+      "transaction_fee": 0.01,
+      "restriction_coeff": 2.0
+    }
+  },
+  "local_instance": {
+    "assets": [
+      "BTC-USD",
+      "XRP-USD",
+      "ADA-USD",
+      "LINK-USD"
+    ],
+    "n_qubits": 16
+  },
+  "approximation_ratio": 0.9874495179173007,
+  "results": {
+    "Random": {
+      "objective_cost": 0.2677865557351118,
+      "return": 0.02748489468116845,
+      "risk": 0.002710153573941507,
+      "sharpe_ratio": 0.5279552665173103,
+      "transaction_cost": 0.024,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Random"
+    },
+    "Simulated annealing": {
+      "objective_cost": 0.2677865557351118,
+      "return": 0.02748489468116845,
+      "risk": 0.002710153573941507,
+      "sharpe_ratio": 0.5279552665173103,
+      "transaction_cost": 0.024,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Simulated annealing"
+    },
+    "Exact (brute force)": {
+      "objective_cost": 0.2677865557351118,
+      "return": 0.02748489468116845,
+      "risk": 0.002710153573941507,
+      "sharpe_ratio": 0.5279552665173103,
+      "transaction_cost": 0.024,
+      "rest_breach_pct": 19.999999999999996,
+      "budget_per_step": [
+        1.0,
+        0.8
+      ],
+      "max_single_weight": 0.6,
+      "solver": "Exact (brute force)"
+    },
+    "VQE-DE (optimized_real_amplitudes)": {
+      "objective_cost": 0.2867016653126888,
+      "return": -0.04036437967770351,
+      "risk": 0.0032513267945279848,
+      "sharpe_ratio": -0.7078935757392933,
+      "transaction_cost": 0.018,
+      "rest_breach_pct": 0.0,
+      "budget_per_step": [
+        1.0,
+        1.0
+      ],
+      "max_single_weight": 0.6,
+      "solver": "VQE-DE (optimized_real_amplitudes)"
+    }
+  },
+  "quantum_exposure": {
+    "blind": 0.92,
+    "aware": 0.92
+  },
+  "best_strategy": {
+    "time_step_0": {
+      "BTC-USD": 0.2,
+      "XRP-USD": 0.6,
+      "ADA-USD": 0.0,
+      "LINK-USD": 0.2
+    },
+    "time_step_1": {
+      "BTC-USD": 0.6,
+      "XRP-USD": 0.4,
+      "ADA-USD": 0.0,
+      "LINK-USD": 0.0
+    }
+  },
+  "theta_sweep": []
+}
