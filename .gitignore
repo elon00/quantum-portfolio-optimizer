@@ -1,7 +1,8 @@
 __pycache__/
 *.pyc
 .venv/
-.env
+.env*
+!.env.example
 data/*.csv
 results/**/qpu_result_*.json
 results/**/last_job_id.txt
