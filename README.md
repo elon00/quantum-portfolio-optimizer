@@ -13,6 +13,13 @@ same problem instance can be pushed to a real QPU with one flag.
 
 ---
 
+## Reality and evidence policy
+
+- Local solver and simulator results are reproducible research results only when the documented commands, dependencies, input data, and result artifacts can be rerun successfully.
+- A successful local simulation is **not** evidence of execution on an IBM Quantum QPU.
+- Hardware execution must be reported with the returned job/session identifiers and provider evidence.
+- Financial outputs are research results, not investment advice or guaranteed performance.
+
 ## Why this project is structured this way
 
 The Qiskit Function is a managed black box: you hand it prices and settings, it
