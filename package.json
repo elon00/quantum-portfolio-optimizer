@@ -1,0 +1,16 @@
+{
+  "name": "quantum-portfolio-optimizer",
+  "version": "1.0.0",
+  "description": "Dynamic Portfolio Optimization on IBM Quantum with Post-Quantum Cryptography",
+  "type": "module",
+  "scripts": {
+    "test:nist": "python tests/test_nist_pqc.py",
+    "reality:universal": "python scripts/reality_universal.py",
+    "reality:certify": "python scripts/generate_urs_certificate.py"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.8.1",
+    "@noble/hashes": "^1.7.1",
+    "@noble/post-quantum": "^0.2.1"
+  }
+}

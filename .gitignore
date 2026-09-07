@@ -6,3 +6,5 @@ __pycache__/
 data/*.csv
 results/**/qpu_result_*.json
 results/**/last_job_id.txt
+node_modules/
+
