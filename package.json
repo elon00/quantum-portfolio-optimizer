@@ -6,7 +6,9 @@
   "scripts": {
     "test:nist": "python tests/test_nist_pqc.py",
     "reality:universal": "python scripts/reality_universal.py",
-    "reality:certify": "python scripts/generate_urs_certificate.py"
+    "reality:certify": "python scripts/generate_urs_certificate.py",
+    "test": "npm run test:nist && npm run reality:universal",
+    "qmoosa:finish": "npm test"
   },
   "dependencies": {
     "@noble/curves": "^1.8.1",
