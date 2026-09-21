@@ -13,6 +13,6 @@
   "dependencies": {
     "@noble/curves": "^1.8.1",
     "@noble/hashes": "^1.7.1",
-    "@noble/post-quantum": "^0.2.1"
+    "@noble/post-quantum": "^0.7.1"
   }
 }
