@@ -2,7 +2,7 @@
 numpy>=1.26
 pandas>=2.0
 matplotlib>=3.8
-scipy>=1.11
+scipy>=1.18.1
 
 # Market data
 yfinance>=0.2.40
