@@ -1,7 +1,7 @@
 # Core
 numpy>=1.26
 pandas>=2.0
-matplotlib>=3.8
+matplotlib>=3.11.2
 scipy>=1.11
 
 # Market data
