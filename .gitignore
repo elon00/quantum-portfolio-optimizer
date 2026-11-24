@@ -8,3 +8,6 @@ results/**/qpu_result_*.json
 results/**/last_job_id.txt
 node_modules/
 
+
+# Lean 4 build artifacts
+lean_verify/.lake/
